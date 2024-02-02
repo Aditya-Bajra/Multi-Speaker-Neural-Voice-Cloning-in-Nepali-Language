@@ -23,7 +23,7 @@ def create_hparams(hparams_string=None, verbose=False):
         "cudnn_enabled":True,
         "cudnn_benchmark":False,
         "ignore_layers":['embedding.weight'],
-        "freeze_layers":['encoder'], # Freeze tacotron2 layer for finetuning
+        #"freeze_layers":['encoder'], # Freeze tacotron2 layer for finetuning
 
         ################################
         # Data Parameters             #
@@ -87,8 +87,8 @@ def create_hparams(hparams_string=None, verbose=False):
         # Optimization Hyperparameters #
         ################################
         "use_saved_learning_rate":True,
-        "learning_rate":4e-3,
-        "weight_decay":1e-5,
+        "learning_rate":1e-3,
+        "weight_decay":1e-6,
         "grad_clip_thresh":1.0,
         "batch_size":8, # each gpus
         "mask_padding":True  # set model's padded outputs to padded values
