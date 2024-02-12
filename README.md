@@ -1,10 +1,11 @@
 # Multi-Speaker-Neural-Voice-Cloning-in-Nepali-Language
-
+### The project is deployed here:
+   https://host-test-smoky.vercel.app/
 
 ## Step-wise Working 
 
 1. ```python
-   !git clone https://github.com/projan-shakya/Multi-Speaker-Neural-Voice-Cloning-in-Nepali-Language.git
+   !git clone https://github.com/Aditya-Bajra/Multi-Speaker-Neural-Voice-Cloning-in-Nepali-Language.git
 3. ```python
    import os
    os.chdir('Multi-Speaker-Neural-Voice-Cloning-in-Nepali-Language')
@@ -22,3 +23,5 @@
 8.  To train type this code **CAREFUL ON THE FILEPATH HERE**
    ```python
 !python train.py --output_directory=<drivelink> --log_directory=<drivelink> -c <last_checkpointfile> --warm_start
+
+   
